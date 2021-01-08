@@ -1,0 +1,54 @@
+var obj = JSON.parse($response.body);
+
+obj= {
+  "status": "ok",
+  "content": {
+    "userId": "kakashi",
+    "iam": "Student",
+    "pushConsent": false,
+    "age": 20,
+    "pushToken": "mP+AUwn4RCtbghcfPB9CI7R0Y97yKZQ2xUdy87H5ugc=",
+    "country": "IQ",
+    "type": "anonymous",
+    "provider": "photomath",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjkwNjhkODViNTUyZDY1NTk1ZGZhZDAiLCJpc3MiOiJodHRwczovL2xhcGkucGhvdG9tYXRoLm5ldC92NCIsImF1ZCI6InBob3RvbWF0aCIsInNjb3BlIjpbImZyZWU6c29sdXRpb24iLCJwYWlkOnNvbHV0aW9uIiwidHJpYWw6c29sdXRpb24iLCJteXBlZGlhOnNvbHV0aW9uIiwid2lwOmJhc2ljIl0sImlhdCI6MTYxMDEyNTc1MiwiZXhwIjoxNjEwNzMwNTUyfQ.1x7zeHTpKTKMvlTzObTipvvAvBmYtmwTILDi-4X92aI",
+    "refreshToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjkwNjhkODViNTUyZDY1NTk1ZGZhZDAiLCJpc3MiOiJodHRwczovL2xhcGkucGhvdG9tYXRoLm5ldC92NCIsImF1ZCI6InBob3RvbWF0aCIsInNjb3BlIjpbInJlZnJlc2giXSwiaWF0IjoxNjEwMTI1NzUyLCJleHAiOjE2MjU2Nzc3NTJ9.qW-XgciWn5M0IUH87nXUNu8XUAqOWx2ou9JFDRU94TE",
+    "scope": [
+      "free:solution",
+      "paid:solution",
+      "trial:solution",
+      "mypedia:solution",
+      "wip:basic"
+    ],
+    "created": "2020-10-21T16:59:04.087Z",
+    "updated": "2021-01-08T17:08:44.964Z",
+    "providerIds": [
+      "47B9BA11-BE5F-44A0-8080-AEAA1F81C82A"
+    ],
+    "status": "pending",
+    "tier": {
+      "level": "genius",
+      "added": "2020-10-21T16:59:04.088Z"
+    },
+    "region": "SU",
+    "subscription": {
+      "packageName": "com.microblink.PhotoMath",
+      "productId": "com.microblink.PhotoMath.purchase.genius.one_year",
+      "orderId": "250000781838160",
+      "expiry": "2099-01-21T00:46:07.000Z",
+      "started": "2020-12-29T00:46:07.000Z",
+      "autoRenewing": true,
+      "status": "active",
+      "inGracePeriod": true
+    },
+    "rewardVideoAdCounter": 3
+  },
+  "geo": {
+    "age": 13,
+    "eu": false,
+    "region": "SU",
+    "country": "IQ"
+  }
+};
+
+$done({body: JSON.stringify(obj)});
