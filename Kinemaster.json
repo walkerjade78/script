@@ -8,4 +8,7 @@ obj= {
   "subscription_product_id" : "com.kinemaster.sub.annual.ia2",
   "state_code" : 0
 };
+
 $done({body: JSON.stringify(obj)});
+
+// Descriptions
